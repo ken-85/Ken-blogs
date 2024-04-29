@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "Hello everyone! Today, I want to share my journey of learning React, a popular JavaScript library for building user interfaces. React has taken the web development world by storm, thanks to its simplicity, efficiency, and flexibility. It allows developers to create large web applications that can update and render efficiently without requiring the page to reload. ",
+      "author": "Ken",
+      "id": "1"
+    },
+    {
+      "title": "My second blog",
+      "body": "The best way to start learning React is from the official React documentation. It's comprehensive, well-written, and beginner-friendly. I also found the 'Intro to React' tutorial on the official React website very helpful. One of the first things you'll encounter when learning React is JSX. It's a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript code. It might seem strange at first, but it becomes second nature with practice.",
+      "author": "Ken",
+      "id": "2"
+    },
+    {
+      "title": "Rath's first blog",
+      "body": "Rath has joind the blogging trend",
+      "author": "Rath",
+      "id": "3"
+    },
+    {
+      "id": "f9bd",
+      "title": "Trip to north sikkim",
+      "body": "Hello to all those reading. \n\nThis is a blog about my trip to North Sikkim with my cousins. After years of planning and procrastination, with schedules clashing, finally, the opportunity presented itself to us this past month, with everybody's calendar clearing up. It was a two-day, two-night trip. The first leg of the trip was to reach Thangu by road and spend the night in a homestay we had pre-booked before we headed towards Guru Dongmar Lake early next morning. The journey to our first destination was as pleasant as we had expected, driving through the scenic valleys. We even stopped for lunch, devouring an ungodly amount of momo. Although, it was tiring having to journey through the road for almost twelve hours. The biggest shock came to us when we discovered that the area where our homestay was situated still had no access to electricity. Hence, we had dinner under the lights of an oil lamp, which was quite the damper to the ambiance. Nonetheless, the food was homemade and delicious, which was satisfying. The biggest upset was having no hot water to freshen up until the morning. Mind you, we were up at a very high altitude, which meant that dealing with cold water was like getting shocked with electricity. We woke up early the next morning, and amongst the mountain mist and warm tea, we prepared for our next destination. \n\nThe road towards Gurudongmar Lake was part rocky and part smooth, and being at such a high altitude was strenuous to the body. But once we reached there, it was all worth it. The lake was serene in every sense of the word. It emitted an aura that was so holy and so tranquil. We saw all kinds of people, from tourists to pilgrims. After meditating and clicking thousands of pictures, it was time to return since it was almost noon, and the weather conditions around the lake would be hazardous to us, which was quite a bummer. While going back, we stopped at a popular eating spot for our lunch. However, I was disappointed that the best sellers were junk foods like Maggi, catered to meet the tastebuds of Bengali tourists, instead of traditional foods like Thukpa. \n\nAfter lunch, we headed towards Lachung, a popular town in North Sikkim for its natural beauty and where we would be staying on our last day. We also wanted to visit the Flower Valley Yumthang, but it wasn't the correct season, so we skipped going there.\n\nFinally, after a cozy night at the hotel, we headed home. All in all, it was a remarkable trip. We made many memories, and though there were some unexpected surprises, the scenery and nature made up for it. ",
+      "author": "Ken"
+    }
+  ]
+}
