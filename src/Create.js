@@ -50,7 +50,7 @@ const Create = () => {
                 onChange={(e)=>setAuthor(e.target.value)}
                 />
                 {!isLoading && <button>Add Blog</button>}
-                {isLoading && <button disabled>Adding...</button>}
+                {isLoading && <button disabled>Adding Blog...</button>}
             </form>
         </div>   
      );
