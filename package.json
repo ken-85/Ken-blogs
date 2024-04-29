@@ -1,6 +1,6 @@
 {
   "name": "ken-blogs",
-  "homepage":"https://ken-85.github.io/Ken-blog-data",
+  "homepage":"https://github.com/ken-85/Ken-blog-data/blob/[main|master]/db.json",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
