@@ -42,13 +42,13 @@ const Create = () => {
                 onChange={(e)=>setBody(e.target.value)}
                 />
                 <label>Blog Author: </label>
-                <select
+                <input
+                type="text"
+                required
+                maxLength={50}
                 value={author}
                 onChange={(e)=>setAuthor(e.target.value)}
-                >
-                    <option value="Ken">Ken</option>
-                    <option value="Rath">Rath</option>
-                </select>
+                />
                 {!isLoading && <button>Add Blog</button>}
                 {isLoading && <button disabled>Adding...</button>}
             </form>
