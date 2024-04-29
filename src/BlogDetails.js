@@ -4,11 +4,11 @@ import { useHistory } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id }=useParams();
-    const {data:blog, isError, isLoading}=useFetch('http://localhost:8000/blogs/'+id);
+    const {data:blog, isError, isLoading}=useFetch('https://github.com/ken-85/Ken-blogs-data/blob/[main|master]/db.json/'+id);
     const history=useHistory();
 
     const handleDelete=()=>{
-        fetch('http://localhost:8000/blogs/'+blog.id, {
+        fetch('https://github.com/ken-85/Ken-blogs-data/blob/[main|master]/db.jsons/'+blog.id, {
             method:'DELETE'
         }).then(()=>{
             history.push('/');
