@@ -14,7 +14,7 @@ const Create = () => {
         const blog={title, body, author};
 
         setisLoading(true);
-        fetch('http://localhost:8000/blogs', {
+        fetch('https://ken-blogs-data.onrender.com/blogs', {
             method: 'POST',
             headers: {"Content-type":"application/json"},
             body:JSON.stringify(blog)
