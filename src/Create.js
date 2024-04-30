@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {useHistory} from 'react-router-dom'
-
+import axios from "axios";
 const Create = () => {
 
     const [title, setTitle]=useState('');
@@ -9,21 +9,21 @@ const Create = () => {
     const[isLoading, setisLoading]=useState(false);
     const history=useHistory();
 
-    const handleSubmit=(e)=> {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const blog={title, body, author};
-
+        const blog = { title, body, author };
         setisLoading(true);
-        fetch('https://ken-blogs-data.onrender.com/blogs', {
-            method: 'POST',
-            headers: {"Content-type":"application/json"},
-            body:JSON.stringify(blog)
-        }).then(()=>{
-            console.log('new blog added');
-            setisLoading(false);
-            history.push('/');
-        })
-    }
+        try{
+            axios.post('https://ken-blogs-data.onrender.com/blogs', blog)
+            .then(() => {
+                console.log('new blog added');
+                setisLoading(false);
+                history.push('/');
+            });
+        }catch(err){
+                console.log(`Error:${err.message}`);
+        }
+      }
     return ( 
         <div className="create">
             <h2>Add a new blog</h2>
