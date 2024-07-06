@@ -1,27 +1,35 @@
-import { useParams } from "react-router-dom";
-import useFetch from "./useFetch";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useHistory, Link } from "react-router-dom";
 import axios from "axios";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const BlogDetails = () => {
   const { id } = useParams();
   const history = useHistory();
-  const {
-    data: blog,
-    isError,
-    isLoading,
-  } = useFetch("https://ken-blogs-data.onrender.com/blogs/" + id);
+  const [blog, setBlog] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(null);
+
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        const response = await axios.get(`https://ken-blogs-data.onrender.com/blogs/${id}`);
+        setBlog(response.data);
+        setIsLoading(false);
+      } catch (err) {
+        setIsError(`Error: ${err.message}`);
+        setIsLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [id]);
 
   const handleDelete = async () => {
     try {
-      axios
-        .delete(`https://ken-blogs-data.onrender.com/blogs/${blog.id}`)
-        .then(() => {
-          history.push("/");
-        });
+      await axios.delete(`https://ken-blogs-data.onrender.com/blogs/${id}`);
+      history.push("/");
     } catch (err) {
-      console.log(`Error:${err.message}`);
+      console.log(`Error: ${err.message}`);
     }
   };
 
