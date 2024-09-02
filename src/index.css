@@ -8,6 +8,12 @@
   color: #333;
 }
 
+body {
+  background-image: url(bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -68,7 +74,7 @@
 .blog-list>h2{
   font-family:"Poppins";
   color:white;
-  background-color: #87CEEB;
+  background-color: #87CEEB; /* Updated to sky blue */
   width:120px;
   text-align:center;
   margin-left:15px;
@@ -79,7 +85,7 @@
 
 .blog-details h2{
   font-size:20px;
-  color:#87CEEB;
+  color:white;
   margin-bottom:10px;
 }
 
@@ -96,7 +102,12 @@
   border-radius:8px;
   cursor:pointer;
 }
-
+.blog-details p{
+  color:white;
+}
+.blog-details .blog-body{
+  color:white;
+}
 /*Create page*/
 
 .create{
@@ -135,6 +146,10 @@
   border-radius:8px;
   cursor:pointer;
   font-family:"Poppins";
+}
+
+.create button:hover{
+  background: darkcyan;
 }
 
 /* 404 Not found */

@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem; /* Increased height by increasing top and bottom padding */
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.navbar:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    color: white; /* Suitable contrasting color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.1); /* Changed to a different contrasting color */
+    border-radius: 4px;
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.links a:hover {
+    background: rgba(0, 0, 0, 0.2); /* Changed to a different contrasting color */
+    transform: scale(1.05);
+    color: #ffffff; /* Slightly brighter on hover */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+.navbar h1 {
+    color:white;
+}

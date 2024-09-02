@@ -1,0 +1,65 @@
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the cards */
+  padding: 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient matching the image */
+  border-radius: 10px;
+}
+
+.blog-preview {
+  width: 80%; /* Adjust the width as needed */
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient matching the image */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px 0; /* Spacing between cards */
+  padding: 20px; /* Padding inside the cards */
+  transition: transform 0.2s; /* Smooth hover effect */
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.blog-preview h2{
+    color: white;
+}
+
+.blog-preview p{
+    color: white; /* Set the paragraph text color to white */
+}
+
+.blog-preview:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-preview:hover .blog-content {
+  max-height: 100px; /* Adjust the height as needed */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.blog-preview h2 {
+  margin: 0 0 10px; /* Space below the title */
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.blog-preview p {
+  padding: 0 20px 20px;
+  margin: 0;
+  color: white; /* Ensure the paragraph text color is white */
+}
+
+.blog-content {
+  display: none;
+  padding: 0 20px 20px;
+  color: #333; /* Darker text for the content */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.blog-preview:hover .blog-content {
+  display: block;
+}

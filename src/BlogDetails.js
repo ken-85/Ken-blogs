@@ -41,7 +41,7 @@ const BlogDetails = () => {
         <article>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-          <div>{blog.body}</div>
+          <div className="blog-body">{blog.body}</div>
           <div className="blog_button">
             <Link to={`/edit/${blog.id}`}>
               <button>Edit</button>
