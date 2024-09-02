@@ -39,11 +39,18 @@
     .navbar {
         flex-direction: column;
         padding: 1rem;
+        align-items: flex-start; /* Adjust alignment for mobile view */
     }
 
     .links {
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%; /* Make links take full width */
+    }
+
+    .links a {
+        width: 100%; /* Make each link take full width */
+        text-align: center; /* Center text within links */
     }
 }
 
