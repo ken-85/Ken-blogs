@@ -82,16 +82,17 @@ body {
 }
 
 /*Blog-details page*/
-
+.blog-details{
+  background-color: white;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+}
 .blog-details h2{
   font-size:20px;
-  color:white;
+  color:#87CEEB;
+  margin-left: 10px;
   margin-bottom:10px;
-}
-
-.blog-details div{
-  margin-top:20px;
-  margin-bottom:20px;
 }
 
 .blog-details button{
@@ -101,12 +102,23 @@ body {
   padding:8px;
   border-radius:8px;
   cursor:pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.blog-details button:hover{
+  background: darkcyan;
 }
 .blog-details p{
-  color:white;
+  color:black;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .blog-details .blog-body{
-  color:white;
+  color:black;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 /*Create page*/
 
